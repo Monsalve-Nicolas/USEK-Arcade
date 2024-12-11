@@ -11,55 +11,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_menu.unity
     guid: d54355f3d97c82f44bbc040a6747e129
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_menu.unity
     guid: a4d9f306cf68c064088a378a6c90bfdd
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_intro.unity
     guid: 4f2763aee03037d4d82398a312cfe85d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_intro.unity
     guid: fe5671901afcaea4eaaf3edb9f784925
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_level1.unity
     guid: f2a1d09f538c7924c88f9450c050dd43
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_level1.unity
     guid: bdffe39f223200f43891ac842164292c
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_bonus1.unity
     guid: 2b03733757087484fbba2cfdc16c482b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_bonus1.unity
     guid: 9124a68be684baf4aaae0d82e1e199ef
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_level2.unity
     guid: 0ff06ad792b1e4d498247acfa11c15dc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_level2.unity
     guid: 726fbb0de133bc04aacf47cf1db5591a
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_bonus2.unity
     guid: 68222df27f294054ebf8f82a5800b0da
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_bonus2.unity
     guid: 98445987762bb874ea36de686644bf5b
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_boss.unity
     guid: 782aed0c3b4100b4fa7ce74b59c3a95e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_boss.unity
     guid: dc2bed784f2b5a849b9890a6c6ef5be1
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_gameOver.unity
     guid: 1da51142f6bb24449bc5e8b16cf6186b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_gameOver.unity
     guid: 23b12be2f714af247ad397f92185390f
   - enabled: 1
     path: Assets/Game1/Scenes/GME1_end.unity
     guid: eec9f75149c14ef468f2b290625904bc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game2/Scenes/GME2_end.unity
     guid: 0cf32f2f7346dd44899342ff0885cf24
   m_configObjects: {}
