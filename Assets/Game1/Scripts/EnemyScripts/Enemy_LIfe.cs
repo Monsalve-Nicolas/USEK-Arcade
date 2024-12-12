@@ -31,5 +31,9 @@ public class Enemy_LIfe : MonoBehaviour
         {
             TakeDamge(5);
         }
+        //if (collision.gameObject.CompareTag("Escudo"))
+        //{
+        //    TakeDamge(2);
+        //}
     }
 }
