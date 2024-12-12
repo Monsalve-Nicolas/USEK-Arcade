@@ -2972,7 +2972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &755279661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3164,7 +3164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radioApuntar: 8.5
-  radioDisparo: 7
+  radioDisparo: 7.74
   player: {fileID: 1783704878}
   player2: {fileID: 11868847}
   posicionBala: {fileID: 671105581}
