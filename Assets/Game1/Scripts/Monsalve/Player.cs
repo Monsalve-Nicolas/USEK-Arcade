@@ -103,6 +103,10 @@ public class Player : MonoBehaviour, IDamageable
         {
             TakeDamage(2);
         }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Physics2D.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider2D>());
+        }
     }
 
 }

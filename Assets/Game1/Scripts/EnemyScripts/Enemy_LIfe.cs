@@ -31,9 +31,9 @@ public class Enemy_LIfe : MonoBehaviour
         {
             TakeDamge(5);
         }
-        //if (collision.gameObject.CompareTag("Escudo"))
-        //{
-        //    TakeDamge(2);
-        //}
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Physics2D.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider2D>());
+        }
     }
 }
