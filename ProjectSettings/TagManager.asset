@@ -7,6 +7,7 @@ TagManager:
   - Boss
   - Bullet
   - Escudo
+  - Player2
   layers:
   - Default
   - TransparentFX

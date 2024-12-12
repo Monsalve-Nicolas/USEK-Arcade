@@ -20,4 +20,5 @@ public class Player2B : MonoBehaviour
     {
         if(value) rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
+   
 }
