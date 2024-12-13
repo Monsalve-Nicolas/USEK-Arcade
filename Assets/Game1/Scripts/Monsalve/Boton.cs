@@ -10,7 +10,7 @@ public class Boton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
-            SceneManager.LoadScene("GME1_level1");
+            SceneManager.LoadScene("GME1_intro");
         }
     }
     public void Menu()

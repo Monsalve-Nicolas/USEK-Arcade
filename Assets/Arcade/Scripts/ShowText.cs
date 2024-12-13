@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 
@@ -107,7 +108,7 @@ namespace Arcade
         {
             if (!_showingTextLine)
             {
-                GameSceneManager.NextLevel();
+                SceneManager.LoadScene("GME1_level1");
             }
             else
             {
