@@ -1078,7 +1078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608620937405434734, guid: 8b941e687d277e44f9936a0ecc7bc55b, type: 3}
       propertyPath: _players.Array.data[0]._buttonEvents.Array.data[0]._continuousCallback
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6608620937405434734, guid: 8b941e687d277e44f9936a0ecc7bc55b, type: 3}
       propertyPath: _players.Array.data[0]._buttonEvents.Array.data[1]._continuousCallback
@@ -1090,7 +1090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6608620937405434734, guid: 8b941e687d277e44f9936a0ecc7bc55b, type: 3}
       propertyPath: _players.Array.data[1]._buttonEvents.Array.data[1]._continuousCallback
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6608620937405434734, guid: 8b941e687d277e44f9936a0ecc7bc55b, type: 3}
       propertyPath: _players.Array.data[0]._joystickEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadJugador2: 5
-  poderSaltoJugador2: 3
+  poderSaltoJugador2: 5
   maximaVidaJugador2: 100
   vidaRestanteJugador2: 0
   player2: {fileID: 241954419}
@@ -2869,8 +2869,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioApuntar: 6
   radioDisparo: 6
-  player: {fileID: 0}
-  player2: {fileID: 0}
+  player: {fileID: 1065488655}
+  player2: {fileID: 241954419}
   posicionBala: {fileID: 832033508}
   prefabBall: {fileID: 8214025235592779883, guid: 530f0bf064e7bf84da2ba9aee580a4fa, type: 3}
   poderbala: 7
@@ -3087,8 +3087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioApuntar: 9
   radioDisparo: 9
-  player: {fileID: 0}
-  player2: {fileID: 0}
+  player: {fileID: 1065488655}
+  player2: {fileID: 241954419}
   posicionBala: {fileID: 969613681}
   prefabBall: {fileID: 8214025235592779883, guid: 530f0bf064e7bf84da2ba9aee580a4fa, type: 3}
   poderbala: 7
@@ -3108,8 +3108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicionA: {fileID: 867914507}
   posicionB: {fileID: 1264339876}
-  ObjetivoDeSeguimiento1: {fileID: 0}
-  ObjetivoDeSeguimiento2: {fileID: 0}
+  ObjetivoDeSeguimiento1: {fileID: 1065488655}
+  ObjetivoDeSeguimiento2: {fileID: 241954419}
   speed: 3.3
   direction: {x: 0, y: 0}
   radio: 3.39
@@ -3488,6 +3488,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &639099734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639099736}
+  - component: {fileID: 639099735}
+  m_Layer: 0
+  m_Name: Muerte
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &639099735
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639099734}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &639099736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639099734}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 419.9, y: 210.78, z: -0.05113983}
+  m_LocalScale: {x: 2.3258, y: 2.3258, z: 2.3258}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &641925684
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,8 +4434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioApuntar: 6
   radioDisparo: 6
-  player: {fileID: 0}
-  player2: {fileID: 0}
+  player: {fileID: 1065488655}
+  player2: {fileID: 241954419}
   posicionBala: {fileID: 594143390}
   prefabBall: {fileID: 8214025235592779883, guid: 530f0bf064e7bf84da2ba9aee580a4fa, type: 3}
   poderbala: 7
@@ -4378,8 +4455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicionA: {fileID: 1947003801}
   posicionB: {fileID: 1495043276}
-  ObjetivoDeSeguimiento1: {fileID: 0}
-  ObjetivoDeSeguimiento2: {fileID: 0}
+  ObjetivoDeSeguimiento1: {fileID: 1065488655}
+  ObjetivoDeSeguimiento2: {fileID: 241954419}
   speed: 3
   direction: {x: 0, y: 0}
   radio: 3.44
@@ -4606,8 +4683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioApuntar: 8
   radioDisparo: 8
-  player: {fileID: 0}
-  player2: {fileID: 0}
+  player: {fileID: 1065488655}
+  player2: {fileID: 241954419}
   posicionBala: {fileID: 1384881158}
   prefabBall: {fileID: 8214025235592779883, guid: 530f0bf064e7bf84da2ba9aee580a4fa, type: 3}
   poderbala: 7
@@ -4627,8 +4704,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicionA: {fileID: 1287171499}
   posicionB: {fileID: 841419990}
-  ObjetivoDeSeguimiento1: {fileID: 0}
-  ObjetivoDeSeguimiento2: {fileID: 0}
+  ObjetivoDeSeguimiento1: {fileID: 1065488655}
+  ObjetivoDeSeguimiento2: {fileID: 241954419}
   speed: 3
   direction: {x: 0, y: 0}
   radio: 3.22
@@ -5470,7 +5547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
-  poderSalto: 1
+  poderSalto: 5
   maximaVidaJugador1: 100
   vidaRestanteJugador1: 0
   player: {fileID: 1065488655}
@@ -8007,8 +8084,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicionA: {fileID: 1998272488}
   posicionB: {fileID: 2126970985}
-  ObjetivoDeSeguimiento1: {fileID: 0}
-  ObjetivoDeSeguimiento2: {fileID: 0}
+  ObjetivoDeSeguimiento1: {fileID: 1065488655}
+  ObjetivoDeSeguimiento2: {fileID: 241954419}
   speed: 3
   direction: {x: 0, y: 0}
   radio: 12
@@ -8220,8 +8297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioApuntar: 8
   radioDisparo: 8
-  player: {fileID: 0}
-  player2: {fileID: 0}
+  player: {fileID: 1065488655}
+  player2: {fileID: 241954419}
   posicionBala: {fileID: 1115292941}
   prefabBall: {fileID: 8214025235592779883, guid: 530f0bf064e7bf84da2ba9aee580a4fa, type: 3}
   poderbala: 7
@@ -8241,8 +8318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicionA: {fileID: 1863466606}
   posicionB: {fileID: 1763609233}
-  ObjetivoDeSeguimiento1: {fileID: 0}
-  ObjetivoDeSeguimiento2: {fileID: 0}
+  ObjetivoDeSeguimiento1: {fileID: 1065488655}
+  ObjetivoDeSeguimiento2: {fileID: 241954419}
   speed: 3
   direction: {x: 0, y: 0}
   radio: 3.16
@@ -15772,8 +15849,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posicionA: {fileID: 1998272488}
   posicionB: {fileID: 2126970985}
-  ObjetivoDeSeguimiento1: {fileID: 0}
-  ObjetivoDeSeguimiento2: {fileID: 0}
+  ObjetivoDeSeguimiento1: {fileID: 1065488655}
+  ObjetivoDeSeguimiento2: {fileID: 241954419}
   speed: 3
   direction: {x: 0, y: 0}
   radio: 12
@@ -18231,3 +18308,4 @@ SceneRoots:
   - {fileID: 888703439}
   - {fileID: 1418659735}
   - {fileID: 149339006}
+  - {fileID: 639099736}

@@ -8,12 +8,16 @@ public class Boton : MonoBehaviour
 {
     public void Inicio()
     {
-        SceneManager.LoadScene("GME1_level1");
-
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SceneManager.LoadScene("GME1_level1");
+        }
     }
     public void Menu()
     {
-        SceneManager.LoadScene("GME1_menu");
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            SceneManager.LoadScene("GME1_menu");
+        } 
     }
-
 }
