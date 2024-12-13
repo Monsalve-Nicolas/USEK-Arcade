@@ -50,11 +50,12 @@ public class ManagerBonus: MonoBehaviour
 
             end.text = "BONUS COMPLETE   PLAYER 1:  " + triggerScript.scoreText.text + " PLAYER 2:   " + triggerP2.scoreText2.text; //Not Set to an instance of an object. Que hacer?
 
-
+            StartCoroutine(CambiarEscena());
 
 
         }
         textTime.text = "Timer: " + timer;
+        
     }
 
     void MostrarPuntajeCanvas()
@@ -62,6 +63,13 @@ public class ManagerBonus: MonoBehaviour
         //El TextMeshPro debe mostrar el puntaje tanto del player 1 como del player 2;
         scoreTextPlayer1.text = "Player 1:" + scoreP1;
         scoreTextPlayer2.text = "Player 2:" + scoreP2;
+    }
+    IEnumerator CambiarEscena()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("GME1_level2");
+
+        yield return true;
     }
 
 
