@@ -6,14 +6,20 @@ public class GroundChecker : MonoBehaviour
 {
     public bool estaTocando = true;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject != transform.parent)
-        estaTocando = true;
+        if (collision.CompareTag("Piso")/* gameObject != transform.parent*/)
+            estaTocando = true;
     }
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.gameObject != transform.parent)
+    //    estaTocando = true;
+    //}
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject != transform.parent)
+        if (collision.CompareTag("Piso")/*collision.gameObject != transform.parent*/)
             estaTocando = false;
     }
 }

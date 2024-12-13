@@ -8,6 +8,8 @@ TagManager:
   - Bullet
   - Escudo
   - Player2
+  - Enemy
+  - Piso
   layers:
   - Default
   - TransparentFX
@@ -56,4 +58,7 @@ TagManager:
     locked: 0
   - name: BossPhase1
     uniqueID: 2612500867
+    locked: 0
+  - name: BossPhase2
+    uniqueID: 1466133039
     locked: 0

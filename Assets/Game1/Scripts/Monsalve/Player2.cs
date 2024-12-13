@@ -95,7 +95,7 @@ public class Player2 : MonoBehaviour, IDamageable
     {
         if (collision.gameObject.CompareTag("Boss"))
         {
-            TakeDamage(2);
+            TakeDamage(4);
         }
         if (collision.gameObject.CompareTag("Player"))
         {

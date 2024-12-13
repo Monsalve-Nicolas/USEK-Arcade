@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadJugador2: 5
-  poderSaltoJugador2: 1
+  poderSaltoJugador2: 3
   maximaVidaJugador2: 100
   vidaRestanteJugador2: 0
   player2: {fileID: 241954419}

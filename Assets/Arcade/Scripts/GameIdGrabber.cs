@@ -15,6 +15,6 @@ namespace Arcade
             gameId = scene.Split("_")[0];
             GameData.CurrentGameId = gameId;
         }
-    }
 #endif
+    }
 }
